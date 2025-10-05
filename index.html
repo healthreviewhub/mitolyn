@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mitolyn Review (2025): Does It Really Work or A Scam?</title>
+    <title>Mitolyn - Official Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +13,15 @@
         font-family: 'Roboto Condensed', 'Arial', sans-serif;
       }
     </style>
-
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -43,9 +50,12 @@
       }
     }
     </script>
+    <!-- Add Babel Standalone for in-browser transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Change script type to text/babel and add presets for TSX -->
+    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
